@@ -10,3 +10,4 @@ import dots from './modules/dots';
 $(() => {
   dots();
 });
+
