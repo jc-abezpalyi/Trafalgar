@@ -13,6 +13,7 @@ $breakpoints: (
   'widescreen': 1200px,
 );
 
+
 // Keywords for include media mixin
 $media-expressions: (
   'screen': 'screen',
@@ -52,7 +53,7 @@ $media-expressions: (
   --color-white: #fff;
   --color-black: #000;
   --color-grey: #999;
-  --color-blue: #39f;
+  --color-blue: #458FF6;
   --nav-item-color: #1F1534;
 
   // Fonts
