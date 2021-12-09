@@ -1,35 +1,31 @@
-// Note: This is an example of components style, so please remove it or re-write it on your styles.
 .header {
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 61px 20px;
-
   }
-
   &__nav {
     &__list {
       display: flex;
-      gap: 39px;
-      @media (max-width: 768px) {
+      @include media('<tablet') {
         display: none;
       }
-
     }
     &__link {
       color: var(--nav-item-color);
-      opacity:0.5;
+      opacity: 0.5;
       transition: opacity 0.3s;
       font-size: 18px;
-      &:hover{
+      padding: 39px 39px 39px 0;
+
+      &:hover {
         opacity: 1;
       }
     }
   }
-
-  &__logo{
+  &__logo {
     display: flex;
     align-items: center;
-   cursor: pointer;
+    cursor: pointer;
   }
 }
