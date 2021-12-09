@@ -3,31 +3,27 @@
   @include media('<tablet') {
     margin-top: 100px;
   }
-
   &__wrapper {
-    margin: 61px 20px;
+    margin: 168px 20px;
     display: flex;
     justify-content: space-between;
     @include media('<tablet') {
       flex-direction: column;
       .promo__download {
         align-items: self-start;
+        color: black;
         margin: 0 auto 30px;
       }
     }
   }
-
   &__download {
     flex-basis: 33%;
     min-width: 250px;
     display: flex;
     flex-direction: column;
-
     &--title {
       font-size: 36px;
       line-height: 48px;
-
-
       &:after {
         content: "";
         display: flex;
@@ -36,13 +32,11 @@
         margin: 30px 0;
       }
     }
-
     &--description {
       font-size: 18px;
       font-weight: 300;
       color: #7D7987;
     }
-
     &--btn {
       background-color: #fff;
       border: 1px solid var(--color-blue);
@@ -52,14 +46,12 @@
       max-width: 200px;
       margin-top: 40px;
       transition: 0.3s;
-
       &:hover {
         background-color: var(--color-blue);
         color: var(--color-white);
       }
     }
   }
-
   &__image {
     flex-basis: 63%;
     position: relative;

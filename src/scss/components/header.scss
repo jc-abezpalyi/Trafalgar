@@ -1,21 +1,16 @@
-// Note: This is an example of components style, so please remove it or re-write it on your styles.
 .header {
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 61px 20px;
-
   }
-
   &__nav {
     &__list {
       display: flex;
-
       @include media('<tablet') {
         display: none;
       }
     }
-
     &__link {
       color: var(--nav-item-color);
       opacity: 0.5;
@@ -28,7 +23,6 @@
       }
     }
   }
-
   &__logo {
     display: flex;
     align-items: center;
