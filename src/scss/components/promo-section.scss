@@ -23,18 +23,20 @@
     flex-direction: column;
     &--title {
       font-size: 36px;
+
       line-height: 48px;
       &:after {
         content: "";
         display: flex;
         width: 60px;
         border: 1px solid black;
-        margin: 30px 0;
+        margin: 30px 0 10px;
       }
     }
     &--description {
       font-size: 18px;
       font-weight: 300;
+      line-height: 30px;
       color: #7D7987;
     }
     &--btn {
@@ -44,7 +46,7 @@
       padding: 20px;
       border-radius: 55px;
       max-width: 200px;
-      margin-top: 40px;
+      margin-top: 20px;
       transition: 0.3s;
       &:hover {
         background-color: var(--color-blue);
@@ -53,7 +55,7 @@
     }
   }
   &__image {
-    flex-basis: 63%;
+    flex-basis: 59%;
     position: relative;
 
     &--rect {
