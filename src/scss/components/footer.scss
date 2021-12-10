@@ -2,8 +2,7 @@
   position: relative;
   padding: 100px;
   width: 100%;
-  background: rgb(103, 195, 243);
-  background: linear-gradient(0deg, rgba(103, 195, 243, 1) 0%, rgba(90, 152, 242, 1) 0%, rgba(90, 152, 242, 1) 100%);
+  background: linear-gradient(180deg, rgba(103, 195, 243, 1) 0%, rgba(90, 152, 242, 1) 100%);
   @include media('<tablet'){
     padding-left: 20px;
     padding-right: 20px;
@@ -22,12 +21,15 @@
     @include media('<tablet') {
       max-width: 100%;
     }
+    &--logo{
+      margin-bottom: 13px;
+    }
     &--description {
-      margin-top: 22px;
       margin-bottom: 31px;
       color: var(--color-white);
       font-size: 18px;
       font-weight: 300;
+      line-height: 28px;
     }
     &--copyright {
       color: var(--color-white);
@@ -36,10 +38,17 @@
     }
   }
   &__columns {
-    flex-basis: 57%;
+    flex-basis: 62%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 25px;
+    @include media('<tablet'){
+      flex-direction: column;
+    }
+    .footer__columns__column__list{
+      list-style: none;
+    }
     &__column__list--link {
       color: var(--color-white);
       transition: opacity 0.3s;
@@ -49,7 +58,7 @@
       }
     }
     &__column__list--item {
-      margin: 10px;
+      margin: 16px 0;
     }
     .heading{
       cursor: default;

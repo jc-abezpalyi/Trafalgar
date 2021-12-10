@@ -1,23 +1,23 @@
-import Swiper, { Navigation, Pagination,effect } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-Swiper.use([Navigation, Pagination,effect]);
+Swiper.use([Navigation, Pagination]);
 
-const swiper = (()=> {
+const swiper = (() => {
   function init() {
-    new Swiper(".testimonials", {
+    new Swiper('.testimonials', {
       spaceBetween: 30,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
       },
     });
   }
   return {
-    init: init
-  }
+    init,
+  };
 })();
 export default swiper;
