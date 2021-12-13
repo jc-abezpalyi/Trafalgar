@@ -54,7 +54,7 @@
     &__column__list--link {
       color: var(--color-white);
       transition: opacity var(--hover-delay);
-      padding: 10px;
+      padding: 0 10px;
 
       &:hover {
         opacity: 0.5;
