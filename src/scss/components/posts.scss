@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   &__wrapper {
-    margin: 133px auto 168px;
+    margin: 168px auto;
     @include media('<tablet'){
       margin: 40px auto 78px;
     }
