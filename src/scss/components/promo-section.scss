@@ -15,8 +15,6 @@
   &__download {
     flex-basis: 33%;
     min-width: 250px;
-    display: flex;
-    flex-direction: column;
     @include media('<tablet'){
       align-items: self-start;
       color: black;
@@ -26,6 +24,7 @@
       font-size: 36px;
       line-height: 48px;
       max-width: 277px;
+      margin-bottom: 30px;
 
       &:after {
         content: "";
@@ -36,24 +35,25 @@
       }
     }
     &__description {
-      font-size: 18px;
+      font-size: var(--size-normal);
       font-weight: 300;
       line-height: 30px;
-      color: #7D7987;
+      margin-bottom: 40px;
+      color: var(--card-description-color);
     }
     &__link {
-      background-color: #fff;
+      background-color: var(--color-white);
       border: 1px solid var(--color-blue);
       color: var(--color-blue);
       border-radius: 55px;
       max-width: 200px;
       margin-top: 20px;
-      transition: opacity 0.3s;
+      transition: opacity var(--hover-delay);
       text-align: center;
       font-weight: bold;
-      font-size: 18px;
+      font-size: var(--size-normal);
       line-height: 55px;
-      padding: 0 10px;
+      padding: 15px 44px;
       &:after{
         content: url(../../images/download_arrow.svg);
         margin-left: 20px ;
@@ -70,7 +70,6 @@
     @include media('<tablet'){
       margin-bottom: 30px;
     }
-
     &--rect {
       width: 100px;
       position: absolute;

@@ -6,7 +6,10 @@
 /// Mixin helping with long string of the url
 /// @link https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
 /// @example @include word-wrap;
-
+@mixin cards-btn-hover($colortext,$bgc) {
+  background-color: $colortext;
+  color: $bgc;
+}
 @mixin word-wrap() {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -59,7 +62,7 @@
   .#{$child-name1}{
     display: table-cell;
     vertical-align: $valign;
-    width: $width1; 
+    width: $width1;
   }
   .#{$child-name2} {
     display: table-cell;
@@ -121,7 +124,7 @@
 /// values—foreground-color background-color.
 /// @link http://bourbon.io/docs/#triangle
 /// @param $size - argument can take one or two values—width height
-/// @param $color - argument can take one or two 
+/// @param $color - argument can take one or two
 /// @param $direction - value: up, down, left, right, up-right, up-left, down-right, down-left
 /// @example @include triangle(12px, gray, down);
 /// @include triangle(12px 6px, gray blue, up-left);

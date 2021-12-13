@@ -7,8 +7,8 @@ const swiper = (() => {
     new Swiper('.testimonials', {
       spaceBetween: 30,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.testimonials-slider-next',
+        prevEl: '.testimonials-slider-prev',
       },
       pagination: {
         el: '.swiper-pagination',

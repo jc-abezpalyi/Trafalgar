@@ -36,7 +36,6 @@
         max-width: 316px;
         margin-left: 38px;
         &--title{
-          font-weight: 700;
           font-size: 21px;
           margin-bottom: 12px;
           line-height: 32px;
@@ -45,8 +44,9 @@
 
       &__info-link{
         color: var(--color-blue);
-        background-color: #fff;
-        transition: opacity 0.3s;
+        background-color: var(--color-white);
+        font-weight: bold;
+        transition: opacity var(--hover-delay);
         &-arrow{
           margin-left: 20px;
         }
@@ -56,25 +56,22 @@
 
         &:after{
           content:url(../../images/arrow.svg);
-
           margin-left: 25px;
         }
       }
       &__description{
         font-size: 16px;
         font-weight: 300;
-        color: #7D7987 ;
+        color: var(--card-description-color) ;
         line-height: 28px;
         margin-bottom: 28px;
       }
     }
   }
   &__title {
-    display: flex;
-    font-size: 18px;
+    text-align: center;
+    font-size: var(--size-normal);
     line-height: 56px;
-    flex-direction: column;
-    align-items: center;
     margin: 0 20px 60px;
     &:after {
       content: '';
@@ -92,14 +89,13 @@
     min-width: 214px;
     border: 1px solid var(--color-blue);
     color: var(--color-blue);
-    background: #fff;
-    transition: color, background-color 0.3s;
+    background: var(--color-white);
+    transition: color, background-color var(--hover-delay);
     margin: 54px auto 0;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: var(--size-normal);
     &:hover {
-      background-color: var(--color-blue);
-      color: white;
+     @include cards-btn-hover(var(--color-blue),var(--color-white));
     }
   }
 }

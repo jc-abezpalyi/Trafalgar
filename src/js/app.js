@@ -8,4 +8,6 @@ import swiper from './modules/swiper';
 // When DOM is ready
 $(() => {
   swiper.init();
+  const burger = document.querySelector('.burger-btn')
+  console.log(burger)
 });

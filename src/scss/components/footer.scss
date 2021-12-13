@@ -2,7 +2,7 @@
   position: relative;
   padding: 100px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(103, 195, 243, 1) 0%, rgba(90, 152, 242, 1) 100%);
+  background: var(--blue-gradient);
   @include media('<tablet'){
     padding-left: 20px;
     padding-right: 20px;
@@ -16,7 +16,8 @@
     }
   }
   &__title {
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
     max-width: 31.5%;
     @include media('<tablet') {
       max-width: 100%;
@@ -27,13 +28,13 @@
     &--description {
       margin-bottom: 31px;
       color: var(--color-white);
-      font-size: 18px;
+      font-size: var(--size-normal);
       font-weight: 300;
       line-height: 28px;
     }
     &--copyright {
       color: var(--color-white);
-      font-size: 18px;
+      font-size: var(--size-normal);
       font-weight: 300;
     }
   }
@@ -51,7 +52,7 @@
     }
     &__column__list--link {
       color: var(--color-white);
-      transition: opacity 0.3s;
+      transition: opacity var(--hover-delay);
       padding: 10px;
       &:hover{
         opacity: 0.5;

@@ -55,6 +55,10 @@ $media-expressions: (
   --color-grey: #999;
   --color-blue: #458FF6;
   --nav-item-color: #1F1534;
+  --blue-gradient: linear-gradient(180deg, rgba(103, 195, 243, 1) 0%, rgba(90, 152, 242, 1) 100%);
+  --card-description-color: #7D7987;
+  --color-slider-pagination:#5B9BF3;
+
 
   // Fonts
   --font-sans-serif:Mulish ,Arial, 'Helvetica Neue', Helvetica, sans-serif;
@@ -66,6 +70,7 @@ $media-expressions: (
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
   --base-min-width: 320px;
+
 
   // Links base
   --base-link-color: var(--color-blue);
@@ -95,4 +100,15 @@ $media-expressions: (
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;
+
+  //sizes
+  --size-normal:18px;
+
+
+  //hoversEffect
+  --hover-delay: 0.3s;
+
+
 }
+
+
