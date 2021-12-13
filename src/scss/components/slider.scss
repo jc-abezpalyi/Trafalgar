@@ -34,11 +34,7 @@
     height: 100%;
 
     &__navigation {
-      display: flex;
-      position: relative;
-      top: 53px;
-
-      max-width: 379px;
+    display: flex;
       margin: 0 auto;
       @include media('<tablet') {
         top: 30px;
@@ -56,8 +52,7 @@
       }
 
       .swiper-pagination {
-        position: absolute;
-        top: -11px;
+position: relative;
 
         .swiper-pagination-bullet {
           padding: 5px;
