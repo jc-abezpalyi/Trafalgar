@@ -4,6 +4,7 @@ Swiper.use([Navigation, Pagination]);
 
 const swiper = (() => {
   function init() {
+    // eslint-disable-next-line no-new
     new Swiper('.testimonials', {
       spaceBetween: 30,
       navigation: {
