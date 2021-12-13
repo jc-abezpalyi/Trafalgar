@@ -125,6 +125,8 @@
 
       .testimonials-slider-next, .testimonials-slider-prev {
         transition: background-color var(--hover-delay);
+        border: none;
+        background-color: #fff;
         @include media('<tablet') {
           display: none;
         }

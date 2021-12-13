@@ -38,7 +38,7 @@
   }
 
   &__columns {
-    flex-basis: 55%;
+    flex-basis: 51%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -54,7 +54,6 @@
     &__column__list--link {
       color: var(--color-white);
       transition: opacity var(--hover-delay);
-      padding: 0 10px;
 
       &:hover {
         opacity: 0.5;
