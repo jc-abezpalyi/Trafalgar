@@ -23,7 +23,9 @@
       transition: opacity var(--hover-delay);
       font-size: var(--size-normal);
       padding:0 21px;
-
+      &:active{
+        font-weight: bold;
+      }
       &:hover {
         opacity: 1;
 

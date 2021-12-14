@@ -1,8 +1,9 @@
 .promo {
   margin-top: 200px;
-  @include media('<tablet'){
+  @include media('<tablet') {
     margin-top: 50px;
   }
+
   &__wrapper {
     margin: 126px 11px;
     display: flex;
@@ -12,14 +13,16 @@
       flex-direction: column-reverse;
     }
   }
+
   &__download {
     flex-basis: 33%;
     min-width: 250px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       align-items: self-start;
       color: black;
       margin: 0 auto 30px;
     }
+
     &__title {
       font-size: 36px;
       line-height: 48px;
@@ -34,6 +37,7 @@
         margin: 30px 0 10px;
       }
     }
+
     &__description {
       font-size: var(--size-normal);
       font-weight: 300;
@@ -41,6 +45,7 @@
       margin-bottom: 40px;
       color: var(--card-description-color);
     }
+
     &__link {
       background-color: var(--color-white);
       border: 1px solid var(--color-blue);
@@ -54,22 +59,26 @@
       font-size: var(--size-normal);
       line-height: 55px;
       padding: 15px 44px;
-      &:after{
+
+      &:after {
         content: url(../../images/download-arrow.svg);
-        margin-left: 20px ;
+        margin-left: 20px;
       }
+
       &:hover {
-     opacity: 0.7;
+        opacity: 0.7;
       }
 
     }
   }
+
   &__image {
     flex-basis: 59%;
     position: relative;
-    @include media('<tablet'){
+    @include media('<tablet') {
       margin-bottom: 30px;
     }
+
     &--rect {
       width: 100px;
       position: absolute;
