@@ -1,7 +1,7 @@
 .testimonials {
   &-slider {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     max-width: 1200px;
     border-radius: 24px;
     background: var(--blue-gradient);
@@ -15,9 +15,9 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding-top: 64px;
+      padding: 63px 0 12px 0;
       color: var(--color-white);
-      font-weight: 700;
+      font-weight: bold;
       font-size: var(--size-normal);
 
       &:after {
@@ -46,11 +46,13 @@
       display: flex;
       justify-content: space-around;
       text-align: center;
-      margin: 80px 41px;
+      margin: 68px 33px;
       flex-wrap: wrap;
 
       &__info {
         display: flex;
+        margin-right: 50px;
+        margin-top: -10px;
         @include media('<tablet') {
           display: block;
 
@@ -58,7 +60,7 @@
       }
 
       &--img {
-        margin: auto 20px;
+        margin: 0 23px;
         border-radius: 50%;
         border: 3px solid white;
         width: 150px;
@@ -66,7 +68,7 @@
       }
 
       &__name {
-        margin: auto 0;
+        margin: 41px 0 37px 10px;
         justify-content: center;
         color: var(--color-white);
         text-align: left;
@@ -78,6 +80,7 @@
         &-name {
           font-weight: 700;
           font-size: 22px;
+          line-height: 24px;
           margin: 0;
         }
 
@@ -95,6 +98,9 @@
         font-size: 19px;
         line-height: 30px;
         opacity: 0.9;
+        & p {
+          max-width: 588px;
+        }
         color: var(--color-white);
         @include media('<tablet') {
           max-width: 100%;
@@ -126,7 +132,7 @@
       .testimonials-slider-next, .testimonials-slider-prev {
         transition: background-color var(--hover-delay);
         border: none;
-        background-color: #fff;
+        background-color: var(--color-white);
         @include media('<tablet') {
           display: none;
         }

@@ -10,7 +10,7 @@ $(() => {
   swiper.init();
   const body = document.querySelector('body');
   const btn = document.querySelector('.burger-btn');
-
+  const OPENED_MENU_CLASSNAME = 'main-menu-opened';
   // eslint-disable-next-line no-use-before-define
   btn.addEventListener('click', () => scrollHandler());
 
@@ -24,5 +24,4 @@ $(() => {
       body.classList.remove(OPENED_MENU_CLASSNAME);
     }
   };
-  const OPENED_MENU_CLASSNAME = 'main-menu-opened';
 });

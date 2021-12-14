@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  padding: 100px;
+  padding: 100px 15px;
   width: 100%;
   background: var(--blue-gradient);
   font-size: var(--size-normal);
@@ -21,7 +21,7 @@
   }
 
   &__title {
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 31.5%;
     @include media('<tablet') {
       max-width: 100%;
@@ -42,13 +42,16 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 29px;
+    margin-right: 86px;
     @include media('<tablet') {
       flex-direction: column;
     }
 
     .footer__columns__column__list {
       list-style: none;
+      margin-top: 27px;
+      margin-right: 13px;
     }
 
     &__column__list--link {
@@ -67,11 +70,11 @@
     .heading {
       font-weight: 700;
       font-size: 20px;
-      line-height: 60px;
+
     }
   }
 
-  .footer__rect-top {
+  &__rect-top {
     position: absolute;
     top: -70px;
     right: 100px;
@@ -80,7 +83,7 @@
     }
   }
 
-  .footer__rect-bot {
+  &__rect-bot {
     position: absolute;
     bottom: 0;
     left: 0;
