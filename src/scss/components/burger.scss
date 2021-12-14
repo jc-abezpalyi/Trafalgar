@@ -13,10 +13,8 @@
   }
 
   .burger-btn {
-    background-color: rgba(153, 153, 153, 0.3);
-    box-shadow: 0 0 10px rgba(153, 153, 153, 0.3);
     border-radius: 10px;
-    position: fixed;
+    position: absolute;
     right: 30px;
     z-index: 999;
     cursor: pointer;
@@ -24,15 +22,15 @@
     width: 65px;
     & span{
       display: block;
-      width: 100%;
+      width: 67%;
       border-radius: 3px;
-      height: 5px;
+      height: 3px;
       background: #332f2f;
       transition: all var(--hover-delay);
       position: relative;
     }
     & span + span {
-      margin-top: 15px;
+      margin-top: 10px;
     }
     & span:first-child {
       animation: ease 0.7s top-2 forwards;
@@ -44,8 +42,11 @@
       animation: ease 0.7s bottom-2 forwards;
     }
   }
-  .menu-wrapper[open] {
+  .menu__wrapper[open] {
     .burger-btn {
+      & span + span{
+        margin-top: 18px;
+      }
       span {
         &:first-child {
           animation: ease 0.7s top forwards;

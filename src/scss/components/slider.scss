@@ -36,10 +36,6 @@
 
       &-slide {
         font-size: var(--size-normal);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
       }
     }
 
@@ -52,7 +48,7 @@
       &__info {
         display: flex;
         align-items: center;
-        margin-right: 50px;
+        margin-right: -14px;
         margin-top: -16px;
         @include media('<tablet') {
           display: block;
