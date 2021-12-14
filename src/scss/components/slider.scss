@@ -41,12 +41,19 @@
       justify-content: space-between;
       margin: 68px 33px;
       flex-wrap: wrap;
+      @media (max-width: 1100px) {
+        justify-content: space-around;
+        margin: 68px 33px;
+      }
 
       &__info {
         display: flex;
         align-items: center;
-        margin-left: 90px;
+        margin-left: 68px;
         margin-top: -16px;
+        @media (max-width: 1100px) {
+          margin-left: 0;
+        }
         @include media('<tablet') {
           display: block;
 
@@ -91,8 +98,11 @@
         max-width: 41%;
         font-size: 19px;
         line-height: 30px;
-        margin-right: 123px;
+        margin-right: 146px;
         opacity: 0.9;
+        @media (max-width: 1100px) {
+          margin-right: 0;
+        }
         & p {
           max-width: 400px;
         }
