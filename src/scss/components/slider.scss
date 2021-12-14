@@ -1,7 +1,7 @@
 .testimonials {
   &-slider {
     position: relative;
-    margin-bottom: 37px;
+    margin-bottom: 44px;
     max-width: 1200px;
     border-radius: 24px;
     background: var(--blue-gradient);
@@ -39,20 +39,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 0;
       }
     }
 
     .person {
       display: flex;
       justify-content: space-around;
-      text-align: center;
       margin: 68px 33px;
       flex-wrap: wrap;
 
       &__info {
         display: flex;
+        align-items: center;
         margin-right: 50px;
-        margin-top: -10px;
+        margin-top: -16px;
         @include media('<tablet') {
           display: block;
 
@@ -68,7 +69,7 @@
       }
 
       &__name {
-        margin: 41px 0 37px 10px;
+        margin: 41px 0 31px 10px;
         justify-content: center;
         color: var(--color-white);
         text-align: left;
@@ -138,7 +139,7 @@
         }
       }
 
-      .testimonials-slider-prev img {
+      .testimonials-slider-prev{
         transform: rotate(180deg);
       }
 

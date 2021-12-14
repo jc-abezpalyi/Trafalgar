@@ -5,7 +5,7 @@
   &__wrapper {
     margin: 168px auto;
     @include media('<tablet') {
-      margin: 40px auto 78px;
+      margin: 40px auto 15px;
     }
   }
 
@@ -22,7 +22,11 @@
       border-radius: 20px;
       margin: 18px;
       padding-bottom: 40px;
+      @include media('<tablet'){
+        margin: 18px 0;
+        border-radius: 0;
 
+      }
       &_rect {
         position: absolute;
         top: -47px;
@@ -36,6 +40,9 @@
 
         & img {
           border-radius: 20px 20px 0 0;
+          @include media('<tablet'){
+            border-radius: 0;
+          }
         }
       }
 
@@ -108,9 +115,11 @@
     margin: 54px auto 0;
     font-weight: bold;
     font-size: var(--size-normal);
-
     &:hover {
       @include cards-btn-hover(var(--color-blue), var(--color-white));
+    }
+    @include media('<tablet'){
+      margin-top: 15px;
     }
   }
 }
