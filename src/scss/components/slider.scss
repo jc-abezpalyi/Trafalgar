@@ -38,14 +38,14 @@
 
     .person {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       margin: 68px 33px;
       flex-wrap: wrap;
 
       &__info {
         display: flex;
         align-items: center;
-        margin-right: -14px;
+        margin-left: 90px;
         margin-top: -16px;
         @include media('<tablet') {
           display: block;
@@ -91,9 +91,10 @@
         max-width: 41%;
         font-size: 19px;
         line-height: 30px;
+        margin-right: 123px;
         opacity: 0.9;
         & p {
-          max-width: 588px;
+          max-width: 400px;
         }
         color: var(--color-white);
         @include media('<tablet') {
