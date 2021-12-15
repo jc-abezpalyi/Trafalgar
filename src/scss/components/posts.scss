@@ -12,7 +12,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     &__card {
       position: relative;
       max-width: 375px;
@@ -34,7 +33,6 @@
         left: -47px;
         z-index: -1;
       }
-
       &--img {
         border-radius: 20px;
         margin-bottom: 21px;

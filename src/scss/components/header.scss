@@ -3,20 +3,16 @@
     display: flex;
     justify-content: space-between;
     margin: 33px 20px 45px;
-
   }
-
   &__logo {
     z-index: 3;
   }
-
   &__nav {
     &__wrapper {
       @include media('<tablet') {
         margin-bottom: 30px;
       }
     }
-
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -25,7 +21,6 @@
       @include media('<tablet') {
         display: none;
       }
-
       &--burger-active {
         @include media('<tablet') {
           display: block;
@@ -44,37 +39,30 @@
         }
       }
     }
-
     &__link {
       color: var(--nav-item-color);
       opacity: 0.5;
       transition: opacity var(--hover-delay);
       font-size: var(--size-normal);
       padding: 0 21px;
-
       &--active {
         font-weight: bold;
         opacity: 1;
       }
-
       &:hover {
         opacity: 1;
-
       }
     }
   }
-
   .menu {
     display: none;
     @include media('<tablet') {
       display: block;
     }
-
     &__wrapper {
       display: flex;
       flex-direction: column;
     }
-
     .burger-btn {
       border-radius: 10px;
       margin-top: 8px;
@@ -84,7 +72,6 @@
       cursor: pointer;
       list-style: none;
       width: 65px;
-
       & span {
         display: block;
         width: 67%;
@@ -94,40 +81,32 @@
         transition: all var(--hover-delay);
         position: relative;
       }
-
       & span + span {
         margin-top: 10px;
       }
-
       & span:first-child {
         animation: ease 0.7s top-2 forwards;
       }
-
       & span:nth-child(2) {
         animation: ease 0.7s scaled-2 forwards;
       }
-
       & span:last-child {
         animation: ease 0.7s bottom-2 forwards;
       }
     }
-
     .menu__wrapper[open] {
       .burger-btn {
         margin-top: 0;
         & span + span {
           margin-top: 18px;
         }
-
         span {
           &:first-child {
             animation: ease 0.7s top forwards;
           }
-
           &:nth-child(2) {
             animation: ease 0.7s scaled forwards;
           }
-
           &:last-child {
             animation: ease 0.7s bottom forwards;
           }
@@ -136,7 +115,6 @@
     }
   }
 }
-
 .main-menu-opened {
   @media (max-width: 768px) {
     overflow: hidden;
