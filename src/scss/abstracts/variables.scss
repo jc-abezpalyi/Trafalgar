@@ -59,7 +59,6 @@ $media-expressions: (
   --card-description-color: #7D7987;
   --color-slider-pagination:#5B9BF3;
 
-
   // Fonts
   --font-sans-serif:Mulish ,Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
@@ -70,6 +69,8 @@ $media-expressions: (
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
   --base-min-width: 320px;
+
+
 
 
   // Links base
@@ -92,6 +93,7 @@ $media-expressions: (
   // Headings base
   --headings-font-family: var(--font-sans-serif);
   --headings-color: var(--base-text-color);
+  --color-base-p: #7d7987;
 
   // Base font styles for headings
   --headings-sizes-h1: 3rem;

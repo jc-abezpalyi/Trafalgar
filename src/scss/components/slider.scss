@@ -5,14 +5,14 @@
     max-width: 1200px;
     border-radius: 24px;
     background: var(--blue-gradient);
-    @include media('<tablet') {
+     @media(max-width: 1200px) {
       border-radius: 0;
     }
 
     &--title {
       align-items: center;
       text-align: center;
-      padding: 63px 0 12px 0;
+      padding: 63px 15px 12px 15px;
       color: var(--color-white);
       font-weight: bold;
       font-size: var(--size-normal);
@@ -51,6 +51,7 @@
         align-items: center;
         margin-left: 68px;
         margin-top: -16px;
+        color: white;
         @media (max-width: 1100px) {
           margin-left: 0;
         }
@@ -71,7 +72,6 @@
       &__name {
         margin: 41px 0 31px 10px;
         justify-content: center;
-        color: var(--color-white);
         text-align: left;
         @include media('<tablet') {
           text-align: center;
@@ -89,6 +89,7 @@
           margin: 0;
           font-size: var(--size-normal);
           line-height: 48px;
+          color: var(--color-white);
         }
       }
 
@@ -104,6 +105,7 @@
 
         & p {
           max-width: 400px;
+          color: var(--color-white);
         }
 
         color: var(--color-white);
@@ -160,18 +162,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -58,7 +58,6 @@
 
       &__info-link {
         color: var(--color-blue);
-        background-color: var(--color-white);
         font-weight: bold;
         transition: opacity var(--hover-delay);
 
@@ -71,15 +70,14 @@
         }
 
         &:after {
-          content: url(../../images/arrow.svg);
-          margin-left: 25px;
+          content: url(/images/arrow.svg);
+          margin-left: 19px;
         }
       }
 
       &__description {
         font-size: 16px;
         font-weight: 300;
-        color: var(--card-description-color);
         line-height: 28px;
         margin-bottom: 28px;
       }

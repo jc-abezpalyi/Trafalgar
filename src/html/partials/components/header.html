@@ -1,4 +1,4 @@
-<header class="header container" >
+<header class="header container">
   <div class="header__wrapper">
     <div class="header__logo">
       <a class="header__logo--link" href="#">
@@ -6,9 +6,9 @@
       </a>
     </div>
     <nav class="header__nav">
-      <ul class="header__nav__list">
-        <li class="header__nav__item">
-          <a class="header__nav__link" href="#">
+      <ul class="header__nav__list ">
+        <li class="header__nav__item ">
+          <a class="header__nav__link header__nav__link--active" href="#">
             Home
           </a>
         </li>
@@ -28,7 +28,15 @@
           </a>
         </li>
       </ul>
-      @@include('../partials/components/burger.html')
+      <div class="menu">
+        <details class="menu__wrapper">
+          <summary role="button" class="burger-btn">
+            <span aria-label="burger element"></span>
+            <span aria-label="burger element"></span>
+            <span aria-label="burger element"></span>
+          </summary>
+        </details>
+      </div>
     </nav>
 
   </div>
