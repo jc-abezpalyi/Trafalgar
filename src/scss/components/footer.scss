@@ -1,4 +1,5 @@
 .footer {
+
   position: relative;
   padding: 100px 15px;
   width: 100%;
@@ -11,6 +12,7 @@
   }
 
   &__wrapper {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     @include media('<tablet') {
@@ -43,12 +45,11 @@
   }
 
   &__columns {
-    flex-basis: 51%;
+    flex-basis: 54%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 29px;
-    margin-right: 86px;
     @include media('<tablet') {
       flex-direction: column;
     }

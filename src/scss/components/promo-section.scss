@@ -1,11 +1,11 @@
 .promo {
-  margin-top: 200px;
+  margin-bottom: 130px;
   @include media('<tablet') {
     margin-top: 50px;
   }
 
   &__wrapper {
-    margin: 126px 11px;
+    margin: 0 11px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,6 +16,7 @@
 
   &__download {
     flex-basis: 33%;
+    padding-left: 15px;
     min-width: 250px;
     @include media('<tablet') {
       text-align: center;
@@ -50,6 +51,7 @@
       font-weight: 300;
       line-height: 30px;
       margin-bottom: 40px;
+
     }
 
     &__link {

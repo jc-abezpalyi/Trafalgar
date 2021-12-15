@@ -1,4 +1,5 @@
 .testimonials {
+
   &-slider {
     position: relative;
     margin-bottom: 44px;
@@ -127,6 +128,7 @@
   }
 
   .slider__nav__container {
+    margin-bottom: 168px;
     .swiper__navigation {
       width: 356px;
       display: flex;

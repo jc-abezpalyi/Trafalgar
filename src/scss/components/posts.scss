@@ -2,7 +2,7 @@
   position: relative;
 
   &__wrapper {
-    margin: 168px auto;
+    margin: 0 auto 158px;
     @include media('<tablet') {
       margin: 40px auto;
     }
@@ -118,7 +118,7 @@
     color: var(--color-blue);
     background: var(--color-white);
     transition: color, background-color var(--hover-delay);
-    margin: 54px auto 0;
+    margin: 54px auto 20px;
     font-weight: bold;
     font-size: var(--size-normal);
     &:hover {
