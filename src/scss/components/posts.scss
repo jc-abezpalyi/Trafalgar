@@ -4,7 +4,7 @@
   &__wrapper {
     margin: 168px auto;
     @include media('<tablet') {
-      margin: 40px auto 15px;
+      margin: 40px auto;
     }
   }
 

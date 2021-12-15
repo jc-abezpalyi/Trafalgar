@@ -7,10 +7,10 @@
   &__wrapper {
     margin: 126px 11px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     @include media('<tablet') {
       margin: 15px;
-      flex-direction: column-reverse;
     }
   }
 
@@ -18,8 +18,8 @@
     flex-basis: 33%;
     min-width: 250px;
     @include media('<tablet') {
-      align-items: self-start;
-      margin: 0 auto 30px;
+      margin: 0 0 30px;
+      flex-basis: 100%
     }
 
     &__title {
@@ -75,6 +75,8 @@
     position: relative;
     @include media('<tablet') {
       margin-bottom: 30px;
+      order: -1;
+      flex-basis: 100%;
     }
 
     &--rect {

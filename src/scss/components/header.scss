@@ -1,10 +1,13 @@
 .header {
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 33px 20px 237px;
+    margin: 33px 20px 45px;
 
+  }
+
+  &__logo {
+    z-index: 3;
   }
 
   &__nav {
@@ -34,8 +37,7 @@
           z-index: 2;
           font-size: 3rem;
           overflow: scroll;
-
-          background-color: var(--color-grey);
+          background-color: var(--color-white);
           &:first-child {
             padding-top: 100px;
           }
@@ -112,6 +114,7 @@
 
     .menu__wrapper[open] {
       .burger-btn {
+        margin-top: 0;
         & span + span {
           margin-top: 18px;
         }

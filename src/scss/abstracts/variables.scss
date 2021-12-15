@@ -57,10 +57,10 @@ $media-expressions: (
   --nav-item-color: #1F1534;
   --blue-gradient: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);;
   --card-description-color: #7D7987;
-  --color-slider-pagination:#5B9BF3;
+  --color-slider-pagination: #5B9BF3;
 
   // Fonts
-  --font-sans-serif:Mulish ,Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --font-sans-serif: Mulish, Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
 
   // Body base
@@ -69,8 +69,6 @@ $media-expressions: (
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
   --base-min-width: 320px;
-
-
 
 
   // Links base
@@ -104,7 +102,7 @@ $media-expressions: (
   --headings-sizes-h6: 1.5rem;
 
   //sizes
-  --size-normal:18px;
+  --size-normal: 18px;
 
 
   //hoversEffect
