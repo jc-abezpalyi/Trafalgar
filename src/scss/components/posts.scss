@@ -22,6 +22,8 @@
       margin: 18px;
       padding-bottom: 40px;
       @include media('<tablet'){
+        min-width: 100%;
+        //test
         margin: 18px 0;
         border-radius: 0;
 
@@ -41,6 +43,8 @@
           border-radius: 20px 20px 0 0;
           @include media('<tablet'){
             border-radius: 0;
+            min-width: 100%;
+            //test
           }
         }
       }
@@ -48,6 +52,11 @@
       &__info {
         max-width: 264px;
         margin-left: 38px;
+        @include media('<tablet'){
+          margin: 0 auto;
+          text-align: center;
+          //test
+        }
 
         &--title {
           font-size: 21px;
