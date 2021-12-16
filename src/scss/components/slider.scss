@@ -1,13 +1,14 @@
 .testimonials {
 
   &-slider {
+    margin-bottom: 226px;
     position: relative;
-    margin-bottom: 44px;
     max-width: 1200px;
     border-radius: 24px;
     background: var(--blue-gradient);
      @media(max-width: 1230px) {
       border-radius: 0;
+       margin-bottom: 100px;
     }
 
     &--title {
@@ -71,7 +72,8 @@
       }
 
       &__name {
-        margin: 41px 0 31px 10px;
+        margin: 28px 0 31px 10px;
+        max-width: 186px;
         justify-content: center;
         text-align: left;
         @include media('<tablet') {
@@ -82,14 +84,13 @@
         &-name {
           font-weight: 700;
           font-size: 22px;
-          line-height: 24px;
           margin: 0;
         }
 
         &-position {
-          margin: 0;
+          display: inline-block;
           font-size: var(--size-normal);
-          line-height: 48px;
+          margin-top: 9px;
           color: var(--color-white);
         }
       }
@@ -128,12 +129,18 @@
   }
 
   .slider__nav__container {
-    margin-bottom: 168px;
+    position: relative;
     .swiper__navigation {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 171px;
       width: 356px;
       display: flex;
       margin: 0 auto;
-
+      @media(max-width: 1230px) {
+        bottom: 50px;
+      }
       .swiper-pagination {
         position: static;
       }

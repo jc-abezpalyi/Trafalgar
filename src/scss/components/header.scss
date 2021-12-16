@@ -3,10 +3,26 @@
     display: flex;
     justify-content: space-between;
     margin: 33px 20px 200px;
-
+    @include media('<tablet') {
+      margin-bottom: 100px;
+    }
   }
   &__logo {
     z-index: 3;
+    background-color: var(--color-white);
+    @include media('<tablet') {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+    }
+    &--link img{
+      @include media('<tablet') {
+        margin: 33px;
+      }
+    }
+
   }
   &__nav {
     &__wrapper {
@@ -19,6 +35,7 @@
       flex-wrap: wrap;
       list-style: none;
       margin-top: 7px;
+      @extend %listreset ;
       @include media('<tablet') {
         display: none;
       }
@@ -46,6 +63,7 @@
       transition: opacity var(--hover-delay);
       font-size: var(--size-normal);
       padding: 0 21px;
+
       &--active {
         font-weight: bold;
         opacity: 1;
@@ -69,7 +87,7 @@
       margin-top: 8px;
       position: absolute;
       right: 30px;
-      z-index: 2;
+      z-index: 4;
       cursor: pointer;
       list-style: none;
       width: 65px;

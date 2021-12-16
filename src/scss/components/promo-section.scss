@@ -1,7 +1,7 @@
 .promo {
   margin-bottom: 130px;
   @include media('<tablet') {
-    margin-top: 50px;
+    margin: 50px 0 30px 0;
   }
 
   &__wrapper {

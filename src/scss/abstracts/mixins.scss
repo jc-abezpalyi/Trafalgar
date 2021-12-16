@@ -2,14 +2,15 @@
 //
 // Note: If you use a framework (bootstrap, zurb etc.) that includes mixins you can import them too or remove this file.
 
-
+// hover effect reverse color background and text
+//@include hover(color-text,background-color)
+@mixin hover($color-text,$background-color) {
+  background-color: $background-color;
+  color: $color-text;
+}
 /// Mixin helping with long string of the url
 /// @link https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
 /// @example @include word-wrap;
-@mixin cards-btn-hover($colortext,$bgc) {
-  background-color: $colortext;
-  color: $bgc;
-}
 @mixin word-wrap() {
   overflow-wrap: break-word;
   word-wrap: break-word;

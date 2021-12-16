@@ -4,10 +4,10 @@
 // Feel free with using ES6 here.
 import $ from 'jquery';
 import swiper from './modules/swiper';
-import Burger from './modules/burger';
+import burger from './modules/burger';
 
 // When DOM is ready
 $(() => {
   swiper.init();
-  Burger();
+  burger();
 });

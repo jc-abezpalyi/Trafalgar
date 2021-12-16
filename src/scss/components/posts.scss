@@ -122,7 +122,7 @@
     font-weight: bold;
     font-size: var(--size-normal);
     &:hover {
-      @include cards-btn-hover(var(--color-blue), var(--color-white));
+      @include hover(var(--color-white), var(--color-blue));
     }
     @include media('<tablet'){
       margin-top: 15px;
