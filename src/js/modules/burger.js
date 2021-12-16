@@ -9,7 +9,7 @@ const burger = () => {
   const BURGER_ACTIVE = 'header__nav__list--burger-active';
 
   const burgerHandler = () => {
-    if ($btn.lengths) {
+    if (!$btn.length) {
       return;
     }
     body.toggleClass(OPENED_MENU_CLASSNAME);
