@@ -34,12 +34,13 @@
       line-height: 28px;
       color: var(--color-white);
     }
-   &--copyright {
-     font-weight: 300;
-     font-size: 16px;
-     line-height: 28px;
-     color: var(--color-white);
-   }
+
+    &--copyright {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 28px;
+      color: var(--color-white);
+    }
   }
 
   &__columns {
@@ -61,10 +62,11 @@
 
     .footer__column {
 
-      @include media('<tablet'){
+      @include media('<tablet') {
         margin-bottom: 40px;
       }
     }
+
     &__column__list--link {
       color: var(--color-white);
       transition: opacity var(--hover-delay);
