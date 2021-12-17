@@ -7,6 +7,7 @@
       margin-bottom: 100px;
     }
   }
+
   &__logo {
     z-index: 3;
     background-color: var(--color-white);
@@ -17,12 +18,14 @@
       right: 0;
 
     }
+
     &--link img {
       @include media('<tablet') {
         margin: 33px;
       }
     }
   }
+
   &__nav {
     &__wrapper {
       @include media('<tablet') {
@@ -76,12 +79,14 @@
       }
     }
   }
-  &__menu-burger {
+
+  &__nav-burger {
     &--opened {
       @media (max-width: 768px) {
         overflow: hidden;
       }
     }
+
     &__wrapper {
       display: flex;
       flex-direction: column;

@@ -4,13 +4,13 @@ const burger = () => {
   const $body = $('body');
   const $window = $(window);
   const $btn = $('.burger-btn');
-  const $menuWrapper = $('.header__menu-burger__wrapper');
+  const $menuWrapper = $('.header__nav-burger__wrapper');
   if (!$btn.length) {
     return;
   }
   const $navList = $('.header__nav__list');
 
-  const OPENED_MENU_CLASSNAME = 'header__menu-burger--opened';
+  const OPENED_MENU_CLASSNAME = 'header__nav-burger--opened';
   const BURGER_ACTIVE = 'header__nav__list--burger-active';
   // eslint-disable-next-line consistent-return
   $window.resize(() => {
