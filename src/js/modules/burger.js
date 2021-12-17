@@ -5,13 +5,20 @@ const burger = () => {
   const $window = $(window);
   const $btn = $('.burger-btn');
   const $menuWrapper = $('.header__nav-burger__wrapper');
+
+  if ($window.width() < 768) {
+    $menuWrapper.removeAttr('open');
+  }
+
   if (!$btn.length) {
     return;
   }
+
   const $navList = $('.header__nav__list');
 
   const OPENED_MENU_CLASSNAME = 'header__nav-burger--opened';
   const BURGER_ACTIVE = 'header__nav__list--burger-active';
+
   // eslint-disable-next-line consistent-return
   $window.resize(() => {
     if ($window.width() > 768) {
