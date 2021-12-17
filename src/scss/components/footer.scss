@@ -1,7 +1,6 @@
 .footer {
-
   position: relative;
-  padding: 100px 15px;
+  padding: 128px 15px;
   width: 100%;
   background: var(--blue-gradient);
   font-size: var(--size-normal);
@@ -21,7 +20,6 @@
   }
 
   &__title {
-    margin-top: 20px;
     max-width: 31.5%;
     @include media('<tablet') {
       max-width: 100%;
@@ -49,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 29px;
+
     @include media('<tablet') {
       flex-direction: column;
     }
@@ -61,7 +59,7 @@
       @extend %listreset ;
     }
 
-    .footer__column{
+    .footer__column {
 
       @include media('<tablet'){
         margin-bottom: 40px;

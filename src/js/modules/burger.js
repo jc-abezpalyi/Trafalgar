@@ -1,18 +1,27 @@
 import $ from 'jquery';
 
 const burger = () => {
-  const body = $('body');
+  const $body = $('body');
+  const $window = $(window);
   const $btn = $('.burger-btn');
+  const $menuWrapper = $('.header__menu__wrapper');
+  if (!$btn.length) {
+    return;
+  }
   const $navList = $('.header__nav__list');
 
   const OPENED_MENU_CLASSNAME = 'main-menu-opened';
   const BURGER_ACTIVE = 'header__nav__list--burger-active';
+  $window.resize(() => {
+    if ($window.width() > 768) {
+      $menuWrapper.attr('open', true);
+    } else {
+      $menuWrapper.removeAttr('open');
+    }
+  });
 
   const burgerHandler = () => {
-    if (!$btn.length) {
-      return;
-    }
-    body.toggleClass(OPENED_MENU_CLASSNAME);
+    $body.toggleClass(OPENED_MENU_CLASSNAME);
     $navList.toggleClass(BURGER_ACTIVE);
   };
 

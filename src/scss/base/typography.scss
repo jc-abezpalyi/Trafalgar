@@ -56,3 +56,15 @@ a {
 p {
   color: var(--color-base-p);
 }
+a {
+  text-decoration: none;
+  color: var(--base-link-color);
+  &:focus {
+    text-decoration: none;
+  }
+  @include media('hover') {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
