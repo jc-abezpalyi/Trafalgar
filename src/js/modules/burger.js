@@ -15,8 +15,6 @@ const burger = () => {
   $window.resize(() => {
     if ($window.width() > 768) {
       $menuWrapper.attr('open', true);
-    } else {
-      $menuWrapper.removeAttr('open');
     }
   });
 
