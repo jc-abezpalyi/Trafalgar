@@ -4,17 +4,22 @@ const burger = () => {
   const $body = $('body');
   const $window = $(window);
   const $btn = $('.burger-btn');
-  const $menuWrapper = $('.header__menu__wrapper');
+  const $menuWrapper = $('.header__menu-burger__wrapper');
   if (!$btn.length) {
     return;
   }
   const $navList = $('.header__nav__list');
 
-  const OPENED_MENU_CLASSNAME = 'main-menu-opened';
+  const OPENED_MENU_CLASSNAME = 'header__menu-burger--opened';
   const BURGER_ACTIVE = 'header__nav__list--burger-active';
+  // eslint-disable-next-line consistent-return
   $window.resize(() => {
     if ($window.width() > 768) {
       $menuWrapper.attr('open', true);
+    } else if ($body.hasClass(OPENED_MENU_CLASSNAME)) {
+      return false;
+    } else {
+      $menuWrapper.removeAttr('open');
     }
   });
 

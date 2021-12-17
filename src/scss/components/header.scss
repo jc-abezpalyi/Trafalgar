@@ -17,7 +17,7 @@
       right: 0;
 
     }
-    &--link img{
+    &--link img {
       @include media('<tablet') {
         margin: 33px;
       }
@@ -29,6 +29,7 @@
         margin-bottom: 30px;
       }
     }
+
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -38,6 +39,7 @@
       @include media('<tablet') {
         display: none;
       }
+
       &--burger-active {
         @include media('<tablet') {
           display: block;
@@ -56,6 +58,7 @@
         }
       }
     }
+
     &__link {
       color: var(--nav-item-color);
       opacity: 0.5;
@@ -67,16 +70,23 @@
         font-weight: bold;
         opacity: 1;
       }
+
       &:hover {
         opacity: 1;
       }
     }
   }
-  &__menu {
+  &__menu-burger {
+    &--opened {
+      @media (max-width: 768px) {
+        overflow: hidden;
+      }
+    }
     &__wrapper {
       display: flex;
       flex-direction: column;
     }
+
     .burger-btn {
       display: none;
       @include media('<tablet') {
@@ -90,6 +100,7 @@
       cursor: pointer;
       list-style: none;
       width: 65px;
+
       & span {
         display: block;
         width: 67%;
@@ -99,36 +110,45 @@
         transition: all var(--hover-delay);
         position: relative;
       }
+
       & span + span {
         margin-top: 10px;
       }
+
       & span:first-child {
         top: 0;
         transform: rotate(0deg);
       }
+
       & span:nth-child(2) {
         transform: scale(1);
       }
+
       & span:last-child {
         bottom: 0;
         transform: rotate(0);
       }
     }
+
     &__wrapper[open] {
       .burger-btn {
         transition: 0.7s;
         margin-top: 0;
+
         & span + span {
           margin-top: 18px;
         }
+
         span {
           &:first-child {
             top: 22px;
             transform: rotate(45deg);
           }
+
           &:nth-child(2) {
             transform: scale(0);
           }
+
           &:last-child {
             bottom: 22px;
             transform: rotate(135deg);
@@ -138,9 +158,6 @@
     }
   }
 }
-.main-menu-opened {
-  @media (max-width: 768px) {
-    overflow: hidden;
-  }
-}
+
+
 
